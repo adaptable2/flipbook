@@ -1,0 +1,36 @@
+.flipbook{
+	position: relative; 
+	.page{
+		position: absolute;
+		z-index: 0;
+		opacity: 0;
+		transition: .5s;
+		&.active{
+			position: relative;
+			z-index: 1;
+			opacity: 1;
+			transition: .5s;
+		}
+	}
+	button{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		border-radius: 100%;
+		width: 32px;
+		outline: none;
+		height: 32px;
+		background: rgba(white,0.5);
+		&.right{
+			right: 0;
+		}
+		&.left{
+			left: 0;
+		}
+	}	
+}
+
+.disabled{
+	pointer-events: none;
+}
