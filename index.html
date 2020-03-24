@@ -60,42 +60,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/imageMapResizer.min.js"></script>
     <script src="js/imageMapResizer.min.map"></script>
-    <script>
-		$(document).ready(function() {
-
-		    $('map').imageMapResize();
-
-		    var number_pages = $('.page').length;
-		    var nump = 0;
-
-		    $('.right').on('click',function(){
-		    	nump = $('.active').attr('data-nump');
-		    	if(nump == number_pages){
-		    		$('.right').addClass('disabled')
-		    	}else{
-		    		$('button').removeClass('disabled')
-			    	$('.active').next().addClass('active');
-		    		$('.active').prev().removeClass('active');
-		    	}		    	
-		    });
-
-		    $('.left').on('click',function(){
-		    	nump = $('.active').attr('data-nump');
-		    	if(nump == 1){
-		    		$('.left').addClass('disabled')
-		    	}else{
-		    		$('button').removeClass('disabled')
-		    		$('.active').prev().addClass('active')
-		    		$('.active').next().removeClass('active')
-		    	}
-
-		    });
-
-		    // function disabledR(num){
-		    // }
-		    // function disabledL(num){
-
-		    // }
-		});
-    </script>
+    <script src="js/main.js"></script>
 </html>
