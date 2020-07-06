@@ -7,6 +7,7 @@ $(document).ready(function() {
 
 	$('.right').on('click',function(){
 		nump = $('.active').attr('data-nump');
+		console.log(nump);
 		if($(window).width() >= 768){
 			if(nump == 1){
 				$('button').removeClass('disabled')
